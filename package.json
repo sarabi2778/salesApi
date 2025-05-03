@@ -1,0 +1,19 @@
+{
+  "name": "salesproject",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.5.0",
+    "node-cron": "^3.0.3",
+    "pg": "^8.15.6",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7"
+  }
+}

@@ -1,0 +1,60 @@
+### Get Total Revenue for a Date Range
+POST http://localhost:3000/api/revenue
+Content-Type: application/json
+
+{
+  "startDate": "2024-01-01",
+  "endDate": "2024-12-31"
+}
+
+### Get Revenue by Product
+POST http://localhost:3000/api/revenue
+Content-Type: application/json
+
+{
+  "startDate": "2023-01-01",
+  "endDate": "2023-12-31",
+  "type": "byProduct",
+  "interval": "monthly"
+}
+
+
+
+
+### Get Revenue by Category
+POST http://localhost:3000/api/revenue
+Content-Type: application/json
+
+{
+  "startDate": "2023-01-01",
+  "endDate": "2023-12-31",
+  "type": "byCategory",
+  "interval": "quarterly"
+}
+
+
+### Get Revenue by Region
+POST http://localhost:3000/api/revenue
+Content-Type: application/json
+
+{
+  "startDate": "2022-01-01",
+  "endDate": "2022-12-31",
+  "type": "trend",
+  "interval": "yearly"
+}
+
+### Get Revenue Trends (Monthly)
+POST http://localhost:3000/api/revenue
+Content-Type: application/json
+
+{
+  "startDate": "2023-01-01",
+  "endDate": "2023-12-31",
+  "type": "byRegion",
+  "interval": "monthly"
+}
+
+
+### Trigger Manual CSV Data Refresh
+POST http://localhost:3000/api/refresh
